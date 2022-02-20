@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>maa er bank</title>
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #010724;
+    }
+
+    .width {
+        width: 34%;
+    }
+
+    @media only screen and (min-width:320px) and (max-width:548px) {
+        .width {
+            width: 80%;
+        }
+
+        /* .m-text{
+            width: 100%;
+        } */
+    }
+</style>
+
+<body>
+    <header>
+        <h2 style="font-family:'Atma', cursive;" class="text-4xl text-center mt-5 text-white">Welcome to সাদ্দাম ও
+            রাকিবের<span class="font-semibold text-indigo-500">
+                বাপের ব্যাঙ্ক</span>!!!</h2>
+    </header>
+    <main>
+        <section class="bg-gradient-to-r from-violet-600 to-fuchsia-600 shadow-inner  width rounded mt-8 mx-auto p-10">
+            <h3 class="mb-4 m-text text-center font-semibold">Please Login Here</h3>
+            <div class="text-center">
+                <input id="user-email" class="border inpu w-full mb-4 block px-2 py-1 border-gray-400 rounded"
+                    type="text" name="email" placeholder="type your email">
+
+                <input id="user-password" class="border inpu w-full mb-4 block py-1 px-2 border-gray-400 rounded"
+                    type="password" name="password" placeholder="type your password">
+                <button id="login-btn"
+                    class="bg-gradient-to-r from-cyan-600 to-blue-600 font-semibold rounded text-white px-6 py-1 shadow-lg">Login</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

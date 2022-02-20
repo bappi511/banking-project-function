@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma&display=swap" rel="stylesheet">
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- title  -->
+    <title>banking dashboard</title>
+</head>
+<style>
+    body {
+        background-color: #010724;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .over {
+        overflow: hidden;
+    }
+</style>
+
+<body>
+    <header>
+        <h2 style="font-family:'Atma', cursive;" class="text-4xl text-white text-center mt-5">সাদ্দাম আর রাকিব লুট তদের
+            <span class="font-semibold text-indigo-400">বাপের টাকা</span>!!!
+        </h2>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <!-- blance and transaction  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 text-white over">
+                <div style="font-family:'Atma', cursive;" class="bg-yellow-600 p-8 rounded">
+                    <h3 class="text-2xl font-semibold">বাপের মোট টাকা</h3>
+                    <h4 class="text-4xl">$<span id="balance-total"> 20000</span> </h4>
+                </div>
+                <div style="font-family:'Atma', cursive;" class="bg-green-400 p-8 rounded">
+                    <h3 class="text-2xl font-semibold">বাপের টাকা নিছি</h3>
+                    <h4 class="text-4xl">$ <span id="withdraw-total">00</span></h4>
+                </div>
+                <div style="font-family:'Atma', cursive;" class="bg-blue-400 p-8 rounded">
+                    <h3 class="text-2xl font-semibold">বাপ কে টাকা দিছি</h3>
+                    <h4 class="text-4xl truncate">$<span id="deposit-total"> 00</span></h4>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Deposit and Withdraw  -->
+        <section class="mt-10">
+            <div class="grid  grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Withdraw  -->
+                <div class="bg-purple-100 p-8 rounded">
+                    <p class="text-2xl mb-2">Please Withdraw</p>
+                    <div>
+                        <input id="withdraw-input" class="border w-full mb-4 block px-2 py-1 border-gray-400 rounded"
+                            type="text" name="Deposit" placeholder="input your amount">
+                        <button id="withdraw-btn"
+                            class="bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold rounded text-white px-5 py-2 ">Withdraw</button>
+                    </div>
+                </div>
+                <!-- Deposit  -->
+                <div class="bg-red-100 p-8 rounded ">
+                    <p class="text-2xl  mb-2">Please Deposit</p>
+                    <div>
+                        <input id="deposit-input" class="border w-full mb-4 block px-2 py-1 border-gray-400 rounded"
+                            type="text" name="Deposit" placeholder="input your amount">
+                        <button id="deposit-btn"
+                            class="bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold rounded text-white px-5 py-2 ">Deposit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <p class="text-center p-8 font-semibold mt-2 text-white"> &copy; All Right Reserved Bappi</p>
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
