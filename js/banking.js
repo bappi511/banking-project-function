@@ -55,7 +55,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const withdrawAmount = getInputValue('withdraw-input');
     const currentBalance = getCurrentBalance();
 
-    if (withdrawAmount > 0 && withdrawAmount < currentBalance) {
+    if (withdrawAmount > 0 && withdrawAmount <= currentBalance) {
         updateTotal('withdraw-total', withdrawAmount);
         updateBalance(withdrawAmount, false);
     }
